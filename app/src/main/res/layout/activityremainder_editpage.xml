@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/lrToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorRed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1dp"
+                    android:background="@drawable/ic_back" />
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginLeft="40dp"
+                    android:text="Reminders"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginRight="20dp"
+                    android:text="save"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lrToolbar"
+        android:orientation="vertical">
+
+        <com.vedas.weightloss.FONTS.TextViewFontStyle
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Remainder Type"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardView"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF">
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:id="@+id/texttype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Every one Hour"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    android:textColor="#FFFF4444" />
+
+
+                <Spinner
+                    android:id="@+id/remainderspinner"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="150dp"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp">
+
+                </Spinner>
+
+                <ToggleButton
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/toggle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/togglebutton"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textOff=""
+                    android:textOn="" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <com.vedas.weightloss.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Note(Optional)"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cardView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardView"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF">
+
+                <com.vedas.weightloss.FONTS.EditTextFontStyle
+                    android:id="@+id/editnotes"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textMultiLine" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <com.vedas.weightloss.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Remainder Time"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardView"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF">
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:id="@+id/textday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Every one Hour"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    android:textColor="#FFFF4444" />
+
+
+                <Spinner
+                    android:id="@+id/eveydayspinner"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="150dp"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp">
+
+                </Spinner>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardView"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/relat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF">
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:id="@+id/texttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="08 : 00 PM"
+                    android:textColor="#FFFF4444"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

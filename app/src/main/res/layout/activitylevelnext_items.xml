@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/radio"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_height="wrap_content" />
+        <com.vedas.weightloss.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:text="Not very active"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/mode"
+            android:layout_height="wrap_content" />
+        <com.vedas.weightloss.FONTS.TextViewFontStyle
+            android:layout_width="match_parent"
+            android:text="Not very active"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/txt"
+            android:layout_below="@+id/mode"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

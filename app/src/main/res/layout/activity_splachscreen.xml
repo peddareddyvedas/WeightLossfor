@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.vedas.weightloss.LoginModule.LoginViewActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/ic_background"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/weightloss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_centerVertical="true"
+            android:text="Weight"
+            android:textColor="@color/colorRed"
+            android:textSize="40dp" />
+        <TextView
+            android:id="@+id/weightloss1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/weightloss"
+            android:text="Loss"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/ic_logo"/>
+    </RelativeLayout>
+</RelativeLayout>

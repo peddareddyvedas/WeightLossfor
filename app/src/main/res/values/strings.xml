@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">WeightLoss</string>
+    <string name="facebook_app_id">1900650143561081</string>
+    <string name="fb_login_protocol_scheme">fb1900650143561081</string>
+
+    <string name="verifytext">We have sent you a verification code to your "\n" mail id for email verification</string>
+    <string name="item_removed_message">Successfully send your Otp</string>
+    <string name="item_set_pin">Please enter the verification code</string>
+    <string name="undo">Done</string>
+    <string name="selectitem">Please select your date of birth</string>
+    <string name="selectitem1">Please select your height</string>
+    <string name="selectitem2">Please select your weight</string>
+    <string name="messsage">We use this information to calculate an accurate calorie goal for you</string>
+    <string name="messsage1">We use this information to calculate BMI and BMR for an accurate calorie goal for you</string>
+    <string name="selectkgs">Please select your goal weight</string>
+    <string name="selectdays">Please select your workout days</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="text1">I Understand that this was permantly delete my Weightloss account,that my information could not be recover,and that this action couldnot be undone</string>
+    <string name="text2">I understand that this was permenently lose access to allof data associated with my profile including food.entries,workout, weight entries and  news feed.</string>
+    <string name="text3">I Understand that this was prementely  delet my Weightloss account,my unused  giftcard cannot be recovered.</string>
+<!--for more setting-->
+    <string name="googlefit">Connect to Googlefit / Apple Health</string>
+    <string name="share">Share and Earn</string>
+    <string name="giftcard">My Scratch Cards</string>
+    <string name="profile">Profile</string>
+    <string name="goals">Goals</string>
+    <string name="units">Units</string>
+    <string name="region">Region</string>
+    <string name="reminders">Reminders</string>
+    <string name="help">Help</string>
+    <string name="aboutus">About Us</string>
+    <string name="feedback">Feedback</string>
+    <string name="ourapp">Our Applications</string>
+    <string name="logout">Log Out</string>
+    <string name="deleteacc">Delete Account</string>
+    <string name="deletemsg">Are you sure you want to</string>
+   <string name="version">Version 1.0</string>
+    <string name="copyright">Copyright 2018, Weightloss, Inc.</string>
+    <string name="aboutmsg">All rights reserved.</string>
+    <string-array name="days_array">
+        <item>S</item>
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+
+    </string-array>
+
+</resources>

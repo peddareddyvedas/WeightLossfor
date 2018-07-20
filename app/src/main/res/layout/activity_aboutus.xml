@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <include layout="@layout/activity_hometoolbar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp">
+         <RelativeLayout
+             android:layout_width="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:id="@+id/rl_one"
+             android:layout_marginTop="130dp"
+             android:layout_height="100dp">
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/ic_logo"/>
+             <com.vedas.weightloss.FONTS.BoldTextViewFontStyle
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="50dp"
+                 android:layout_alignParentBottom="true"
+                 android:textSize="28dp"
+                 android:layout_marginBottom="10dp"
+                 android:textColor="@color/colorRed"
+                 android:text="Weight Loss"/>
+         </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rl_one2"
+            android:layout_below="@+id/rl_one"
+            android:layout_height="100dp">
+            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/version"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+
+            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="@string/copyright"
+                android:textSize="16dp"
+                android:id="@+id/txt1"
+                android:layout_height="wrap_content" />
+            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/aboutmsg"
+                android:layout_below="@+id/txt1"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+            </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<item
+		android:id="@+id/action_dashbore"
+		android:icon="@drawable/ic_logo"
+		android:title="DashBord"
+		android:showAsAction="always|withText"/>
+
+	<item
+		android:id="@+id/action_graph"
+		android:icon="@drawable/ic_logo"
+		android:title="Graph"
+		android:showAsAction="always|withText"/>
+	<item
+		android:id="@+id/action_news"
+		android:icon="@drawable/ic_logo"
+		android:title="News"
+		android:showAsAction="always|withText"/>
+
+
+	<item
+		android:id="@+id/action_more"
+		android:icon="@drawable/ic_logo"
+		android:title="More"
+		android:showAsAction="always|withText"/>
+
+</menu>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.vedas.weightloss.MoreModule.ScrachCardActivity">
+
+    <RelativeLayout
+        android:id="@+id/lrToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorRed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1dp"
+                    android:background="@drawable/ic_back" />
+
+                <com.vedas.weightloss.FONTS.BoldTextViewFontStyle
+
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginLeft="40dp"
+                    android:text="Goals"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/scrachcard_recyclerview"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/lrToolbar"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+    <!--    <?xml version="1.0" encoding="utf-8"?>
+
+
+
+   <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:id="@+id/cardView"
+   android:layout_width="match_parent"
+   android:layout_height="110dp"
+   android:layout_marginLeft="10dp"
+   android:layout_marginRight="10dp"
+   android:layout_marginTop="10dp"
+   android:background="#FFFFFF"
+   android:clickable="false"
+   android:elevation="3dp"
+   android:focusable="false"
+   app:cardCornerRadius="7dp"
+   app:cardElevation="2dp"
+   app:cardMaxElevation="1dp"
+   app:cardPreventCornerOverlap="true"
+   app:cardUseCompatPadding="true">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:id="@+id/relative"
+       android:layout_height="wrap_content"
+       android:background="#ffffff">
+
+       <RelativeLayout
+           android:id="@+id/relative_one"
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:background="#FFFFFF">
+
+           <TextView
+               android:id="@+id/scratchname"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="15dp"
+               android:text="Scratch Card"
+               android:textColor="#FFFFFF"
+               android:textSize="17sp" />
+
+
+           <TextView
+               android:layout_width="100dp"
+               android:layout_height="40dp"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="30dp"
+               android:layout_marginTop="8dp"
+               android:background="@drawable/scrachbox" />
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:id="@+id/relative_two"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:visibility="invisible"
+           android:layout_below="@+id/relative_one"
+           android:background="#FFFFFF">
+
+
+           <ImageView
+               android:id="@+id/card"
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="10dp" />
+
+
+           <TextView
+               android:id="@+id/date"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@+id/card"
+               android:layout_marginTop="15dp"
+               android:layout_marginLeft="20dp"
+               android:text="Scratch Card"
+               android:textColor="#FFFFFF"
+               android:textSize="17sp" />
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:id="@+id/scrachid"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="150dp"
+               android:layout_marginTop="8dp" />
+           <ImageView
+               android:layout_width="15dp"
+               android:id="@+id/clipboard"
+               android:layout_marginTop="18dp"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="20dp"
+               android:layout_height="15dp" />
+
+
+       </RelativeLayout>
+
+   </RelativeLayout>
+   </android.support.v7.widget.CardView>-->

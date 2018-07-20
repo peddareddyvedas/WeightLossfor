@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "658568446773",
+    "firebase_url": "https://weight-loss-cc9da.firebaseio.com",
+    "project_id": "weight-loss-cc9da",
+    "storage_bucket": "weight-loss-cc9da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658568446773:android:4a93d8a66a5ccb3e",
+        "android_client_info": {
+          "package_name": "com.vedas.weightloss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "658568446773-2kpe8as9j0pogivr3nosgpe4pr68bs9r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vedas.weightloss",
+            "certificate_hash": "502fbd8e8f91a5253e808aa97d310dc354daf3d8"
+          }
+        },
+        {
+          "client_id": "658568446773-b7oig9vsv0pa97p0f7559dbt3l5drgm8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "658568446773-b7oig9vsv0pa97p0f7559dbt3l5drgm8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0RZde4VSK_jDimPwBivtsr9FPP7Q-3EE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "658568446773-b7oig9vsv0pa97p0f7559dbt3l5drgm8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

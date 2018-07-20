@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:id="@+id/context_view"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/lrToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/colorRed">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/back"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="1dp"
+                        android:background="@drawable/ic_back" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical|start"
+                        android:layout_marginLeft="40dp"
+                        android:text="ddcdcdcdc"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <com.andexert.library.RippleView
+                        android:id="@+id/info1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?android:actionBarSize"
+                        android:layout_centerVertical="true"
+                        app:rv_color="@color/colorWhite"
+                        app:rv_rippleDuration="@integer/anim_duration_medium"
+                        app:rv_zoom="true"
+                        app:rv_zoomDuration="10">
+
+                        <Button
+                            android:id="@+id/info"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="100dp"
+                            android:background="@drawable/ic_info"
+                            android:textColor="#ffffff"
+                            android:textSize="16dp" />
+                    </com.andexert.library.RippleView>
+
+                    <com.andexert.library.RippleView
+                        android:id="@+id/more"
+                        android:layout_width="?android:actionBarSize"
+                        android:layout_height="?android:actionBarSize"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="70dp"
+                        app:rv_color="@color/colorWhite"
+                        app:rv_rippleDuration="@integer/anim_duration_medium"
+                        app:rv_zoom="true"
+                        app:rv_zoomDuration="10">
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/centerImage"
+                            android:layout_width="?android:actionBarSize"
+                            android:layout_height="?android:actionBarSize"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:text="Next"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff"
+                            android:textSize="16dp" />
+                    </com.andexert.library.RippleView>
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl_webview"
+            android:visibility="gone"
+            android:layout_below="@+id/lrToolbar">
+            <WebView
+                android:layout_width="match_parent"
+                android:id="@+id/webview"
+                android:layout_height="match_parent">
+            </WebView>
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/btn_hide"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_downarrow"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl_mainview"
+            android:layout_below="@+id/lrToolbar">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="16dp"
+                            android:text="@string/messsage1" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rl_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/height"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:cursorVisible="false"
+                                android:hint="Height"
+                                android:inputType="textEmailAddress"
+                                android:paddingRight="16dp"
+                                android:textColor="#000000"
+                                android:textColorHint="#ffffff"
+                                android:textSize="17dp"
+                                android:visibility="gone" />
+
+                        </android.support.design.widget.TextInputLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/dob"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:cursorVisible="false"
+                                android:hint="Weight"
+                                android:inputType="none"
+                                android:paddingRight="16dp"
+                                android:textColor="#000000"
+                                android:textColorHint="#ffffff"
+                                android:textSize="16dp"
+                                android:visibility="gone" />
+
+                        </android.support.design.widget.TextInputLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="30dp"
+                        android:background="#cccccc">
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="10dp"
+                            android:text="BMI(body mass index)"
+                            android:textColor="@color/colorBlack" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/piechart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone">
+
+                        </com.github.mikephil.charting.charts.PieChart>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:background="@color/colorveryseverely" />
+
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/t1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="7"
+                            android:text="Very Severely Underweight"
+                            android:textColor="#000000" />
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/text1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:textColor="#000000" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#000000" />
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:background="@color/colorseverely" />
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/t2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="7"
+                            android:text="Severely Underweight"
+                            android:textColor="#000000" />
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/text2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="16.0-16.9"
+                            android:textColor="#000000" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#000000" />
+
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:background="@color/colorunderweight" />
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/t3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="7"
+                            android:text="Underweight"
+                            android:textColor="#000000" />
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/text3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="17.0-18.4"
+                            android:textColor="#000000" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#000000" />
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:background="@color/colornormal" />
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/t4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="7"
+                            android:text="Normal"
+                            android:textColor="#000000" />
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/text4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="18.5-24.9"
+                            android:textColor="#000000" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#000000" />
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:background="@color/coloroverweight" />
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/t5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="7"
+                            android:text="Overweight"
+                            android:textColor="#000000" />
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/text5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="25.0-29.9"
+                            android:textColor="#000000" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#000000" />
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:background="@color/colorobese1" />
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/t6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="7"
+                            android:text="Obese Class I"
+                            android:textColor="#000000" />
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/text6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="30.0-34.9"
+                            android:textColor="#000000" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#000000" />
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:background="@color/colorobese2" />
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/t7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="7"
+                            android:text="Obese Class II"
+                            android:textColor="#000000" />
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/text7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="35.0-39.9"
+                            android:textColor="#000000" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="#000000" />
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="center"
+                            android:background="@color/colorobese3" />
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/t8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="7"
+                            android:text="Obese Class III"
+                            android:textColor="#000000" />
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/text8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text=">=40.0"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <include layout="@layout/activity_bmr" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

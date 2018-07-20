@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/cardView"
+    android:background="#FFFFFF"
+    android:elevation="3dp"
+    app:cardElevation="2dp"
+    app:cardMaxElevation="1dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relativesetting"
+            android:background="#FFFFFF">
+
+            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                android:id="@+id/regionname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="Invitation Code"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:id="@+id/image"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/ic_region_select"
+                android:layout_centerVertical="true"
+                android:layout_height="20dp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <include layout="@layout/activity_hometoolbar" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_water" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_one"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <com.vedas.weightloss.FONTS.EditTextFontStyle
+                        android:id="@+id/water"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="false"
+                        android:inputType="number"
+                        android:paddingRight="16dp"
+                        android:visibility="gone"
+                        android:textColor="#000000"
+                        android:textColorHint="#ffffff"
+                        android:textSize="16dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/txt_measure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="100dp"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:text="ml"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_two"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/rl_three"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp">
+
+                <com.vedas.weightloss.FONTS.ButtonFontStyle
+                    android:id="@+id/ml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_cornerradius"
+                    android:text="+ 250 ml"
+                    android:textAllCaps="false" />
+
+                <com.vedas.weightloss.FONTS.ButtonFontStyle
+                    android:id="@+id/ml1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/ml"
+                    android:background="@drawable/button_cornerradius"
+                    android:text="+ 500 ml"
+                    android:textAllCaps="false" />
+
+                <com.vedas.weightloss.FONTS.ButtonFontStyle
+                    android:id="@+id/ml2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/ml1"
+                    android:background="@drawable/button_cornerradius"
+                    android:text="+ 1000 ml"
+                    android:textAllCaps="false" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/rl_three"
+                android:id="@+id/rl_four"
+                android:layout_marginTop="50dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/unit"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/ic_settings"/>
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Change Unit"
+                    android:textSize="18dp"
+                    android:id="@+id/txt"
+                    android:layout_toRightOf="@+id/unit"
+                    android:layout_marginLeft="10dp"
+                    />
+                <Spinner
+                    android:id="@+id/spinnerwater"
+                    android:layout_width="100dp"
+                    android:layout_toRightOf="@+id/txt"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_spinner"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    />
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_four"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentBottom="true">
+
+            <com.vedas.weightloss.FONTS.ButtonFontStyle
+                android:id="@+id/set"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/layout_buttoncorner"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

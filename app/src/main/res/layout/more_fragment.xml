@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f6f6">
+
+    <include layout="@layout/activity_hometoolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/rl_googlefit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ic_device" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="60dp"
+                        android:text="@string/googlefit" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/share"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ic_share" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="60dp"
+                        android:text="@string/share" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/scratch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ic_giftcard" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="60dp"
+                        android:text="@string/giftcard" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ic_profile" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="60dp"
+                        android:text="@string/profile" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/settings"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Settings"
+                    android:textColor="@color/colorBlack" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/goals"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ic_goal" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="60dp"
+                        android:text="Goal Plan" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/units"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ic_units" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="60dp"
+                        android:text="@string/units" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/region"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ic_region" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="60dp"
+                        android:text="@string/region" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/reminders"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ic_reminders" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="60dp"
+                        android:text="@string/reminders" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/help"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ic_help" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="60dp"
+                        android:text="@string/help" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/about"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ic_about" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="60dp"
+                        android:text="@string/aboutus" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ic_fedback" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="60dp"
+                        android:text="@string/feedback" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/ourapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ic_ourapp" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="60dp"
+                        android:text="@string/ourapp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ic_logout" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="60dp"
+                        android:text="@string/logout" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/deleteacc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/ic_delete_account" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="60dp"
+                        android:text="@string/deleteacc" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

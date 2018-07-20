@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/context_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+            <include layout="@layout/activity_hometoolbar" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp">
+
+            <com.vedas.weightloss.FONTS.EditTextFontStyle
+                android:id="@+id/weight"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="true"
+                android:hint="Weight"
+                android:inputType="number"
+                android:paddingRight="16dp"
+                android:textColor="#000000"
+                android:textColorHint="#ffffff"
+                android:textSize="17dp"
+                android:visibility="gone"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_spinner" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/measure"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rl_one"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="190dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:background="@color/colorBlack"
+            android:text="Weight"
+            android:textSize="18dp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_spinner" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.vedas.weightloss.FONTS.ButtonFontStyle
+            android:id="@+id/set"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="130dp"
+            android:background="@drawable/layout_buttoncorner"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

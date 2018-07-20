@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="#FF0012">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/toolbar_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="26dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true" />
+
+        <com.vedas.weightloss.FONTS.TextViewFontStyle
+            android:id="@+id/toolbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/img_share"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp" />
+
+        <ImageView
+            android:id="@+id/img_refresh"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70dp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

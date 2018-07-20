@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/lrToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/colorRed">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.vedas.weightloss.FONTS.ButtonFontStyle
+                        android:id="@+id/back"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="1dp"
+                        android:background="@drawable/ic_back" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical|start"
+                        android:layout_marginLeft="40dp"
+                        android:text="ddcdcdcdc"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <com.andexert.library.RippleView
+                        android:id="@+id/more"
+                        android:layout_width="?android:actionBarSize"
+                        android:layout_height="?android:actionBarSize"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="70dp"
+                        app:rv_color="@color/colorWhite"
+                        app:rv_rippleDuration="@integer/anim_duration_medium"
+                        app:rv_zoom="true"
+                        app:rv_zoomDuration="10">
+
+                        <TextView
+                            android:id="@+id/centerImage"
+                            android:layout_width="?android:actionBarSize"
+                            android:layout_height="?android:actionBarSize"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:text="Next"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff"
+                            android:textSize="16dp"
+                            android:visibility="gone" />
+                    </com.andexert.library.RippleView>
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/lrToolbar"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp">
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Congratulations !"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text"
+                        android:layout_marginTop="10dp"
+                        android:text="Your Custom plan is ready and you're one step closer to your goal weight"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp">
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Daily goal is :"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16dp" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:id="@+id/goaltext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="15dp"
+                        android:text="1,234"
+                        android:textColor="#1e90ff"
+                        android:textSize="35dp" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:id="@+id/goaltext1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text1"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@id/goaltext"
+                        android:text="Calories"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="40dp">
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:id="@+id/textmsg1"
+                        android:text="xmcnmxcnmxcn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"                    android:layout_marginTop="15dp">
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:id="@+id/textmsg2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="xmcnmxcnmxcn"
+                        android:layout_centerVertical="true"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"                    android:layout_marginTop="15dp">
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:id="@+id/textmsg3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="xmcnmxcnmxcn"
+                        android:layout_centerVertical="true"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="50dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="43dp"
+                        android:text="Keep me on track with Reminders"
+                        android:textColor="@color/colorBlack" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.vedas.weightloss.FONTS.ButtonFontStyle
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button_border"
+                        android:text="Start Tracking Now"
+                        android:id="@+id/starttrack"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>

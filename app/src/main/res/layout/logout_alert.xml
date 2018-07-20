@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="240dp"
+    android:layout_height="190dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iteam"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="exercise"
+                    android:background="@drawable/ic_alert"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="Are you leaving?" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:text="@string/deletemsg" />
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="35dp"
+                    android:text="exit from this app" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp">
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="35dp"
+                    android:id="@+id/cancel"
+                    android:layout_marginRight="35dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp"
+                    android:text="cancel" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/layout_buttoncorner"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/rl_yes"
+            android:layout_alignParentRight="true">
+            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:text="Yes"
+                android:textColor="@color/colorWhite"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

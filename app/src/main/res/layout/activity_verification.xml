@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="4dp"
+    android:id="@+id/context_view"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:alpha="0.8"
+        android:background="@color/colorRed">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Verification"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_mail" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_icon">
+
+            <RelativeLayout
+                android:id="@+id/rl_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/verifytext"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_text">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:text="Enter Code Here"
+                    android:textSize="15dp" />
+                <com.goodiebag.pinview.Pinview
+                    android:id="@+id/pinview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    app:cursorVisible="false"
+                    app:forceKeyboard="false"
+                    app:hint="0"
+                    app:inputType="text"
+                    app:password="false"
+                    app:pinBackground="@drawable/edittext_border"
+                    app:pinHeight="40dp"
+                    app:pinLength="4"
+                    app:pinWidth="40dp" />
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="150dp"
+                app:mrl_rippleOverlay="true"
+                app:mrl_rippleHover="true"
+                android:id="@+id/resend"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleDuration="@integer/anim_duration_medium"
+                android:layout_height="80dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Resend Code"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorRed"
+                    android:textSize="16dp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/next_btn"
+                    android:layout_width="150dp"
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_rippleRoundedCorners="@dimen/elevation_fab"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/next"
+                        android:background="@drawable/ic_next"
+                        android:layout_gravity="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp" />
+
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/lrToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/colorRed"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <Button
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:id="@+id/back"
+                            android:layout_marginLeft="1dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_back"/>
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ddcdcdcdc"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorWhite"
+                            android:layout_centerVertical="true"
+                            android:textSize="16dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_gravity="center_vertical|start"
+                            />
+                        <com.andexert.library.RippleView
+                            android:id="@+id/more"
+                            android:layout_width="?android:actionBarSize"
+                            android:layout_height="?android:actionBarSize"
+                            android:layout_marginLeft="70dp"
+                            app:rv_color="@color/colorWhite"
+                            app:rv_zoom="true"
+                            app:rv_zoomDuration="10"
+                            app:rv_rippleDuration="@integer/anim_duration_medium"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            >
+                            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                                android:layout_width="?android:actionBarSize"
+                                android:layout_height="?android:actionBarSize"
+                                android:text="Next"
+                                android:textColor="#ffffff"
+                                android:textAlignment="center"
+                                android:gravity="center"
+                                android:textSize="16dp"
+                                android:layout_marginRight="10dp"
+                                android:id="@+id/centerImage" />
+                        </com.andexert.library.RippleView>
+                    </RelativeLayout>
+
+                </android.support.v7.widget.Toolbar>
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/lrToolbar"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:layout_width="match_parent"
+                    android:text="How Active are you ?"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="70dp"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/recylerview"
+                    android:layout_height="wrap_content"
+                    android:layoutAnimation="@anim/layout_animation_fall_down"
+                    >
+                </android.support.v7.widget.RecyclerView>
+                </RelativeLayout>
+        </RelativeLayout>
+        </RelativeLayout>
+</RelativeLayout>

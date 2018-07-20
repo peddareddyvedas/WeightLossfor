@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:id="@+id/context_view"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/lrToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/colorRed"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <Button
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="1dp"
+                            android:id="@+id/back"
+                            android:visibility="gone"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_back"/>
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ddcdcdcdc"
+                            android:textColor="@color/colorWhite"
+                            android:layout_centerVertical="true"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="40dp"
+                            android:layout_gravity="center_vertical|start"
+                            />
+                        <com.andexert.library.RippleView
+                            android:id="@+id/more"
+                            android:layout_width="?android:actionBarSize"
+                            android:layout_height="?android:actionBarSize"
+                            android:layout_marginLeft="70dp"
+                            app:rv_color="@color/colorWhite"
+                            app:rv_zoom="true"
+                            app:rv_zoomDuration="10"
+                            app:rv_rippleDuration="@integer/anim_duration_medium"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            >
+                            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                                android:layout_width="?android:actionBarSize"
+                                android:layout_height="?android:actionBarSize"
+                                android:text="Next"
+                                android:textColor="#ffffff"
+                                android:textAlignment="center"
+                                android:gravity="center"
+                                android:textSize="16dp"
+                                android:layout_marginRight="10dp"
+                                android:id="@+id/centerImage" />
+                        </com.andexert.library.RippleView>
+                    </RelativeLayout>
+
+                </android.support.v7.widget.Toolbar>
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/lrToolbar"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/imagepic"
+                    android:background="@drawable/ic_defaultprofile"
+                    android:layout_height="100dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:id="@+id/rl_one"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="180dp"
+                    android:id="@+id/measure"
+                    android:layout_height="40dp">
+                    <View
+                        android:layout_width="160dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="180dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorBlack"
+                        android:text="Weight"
+                        android:id="@+id/view1"
+                        android:textSize="18dp" />
+                    <Spinner
+                        android:id="@+id/spinnergender"
+                        android:layout_width="200dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_spinner"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        />
+
+                </RelativeLayout>
+                  </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Birth Date"
+                            android:id="@+id/dob"
+                            android:cursorVisible="false"
+                            android:inputType="none"
+                            android:textColor="#000000"
+                            android:visibility="gone"
+                            android:textColorHint="#ffffff"
+                            android:textSize="16dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content">
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/messsage"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Location"
+                            android:id="@+id/loc"
+                            android:inputType="none"
+                            android:visibility="gone"
+                            android:cursorVisible="false"
+                            android:textColor="#000000"
+                            android:textColorHint="#ffffff"
+                            android:textSize="16dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <ImageView
+                        android:id="@+id/chk"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:layout_width="40dp"
+                        android:visibility="gone"
+                        android:background="@drawable/ic_marker"
+                        android:layout_height="40dp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Zip Code"
+                            android:id="@+id/zip"
+                            android:inputType="none"
+                            android:textColor="#000000"
+                            android:visibility="gone"
+                            android:cursorVisible="false"
+                            android:textColorHint="#ffffff"
+                            android:textSize="16dp" />
+
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        </RelativeLayout>
+</RelativeLayout>

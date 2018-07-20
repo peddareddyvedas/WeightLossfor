@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vedas.weightloss">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".NetWork.TestApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_appicon"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        //AIzaSyA4APkV8OY1O4QGX_rY7CCHfsacYamX7Vw
+        //weightloss-207605
+        //207533179865331
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <!-- Register the Alarm Receiver -->
+
+        <activity
+            android:name="com.vedas.weightloss.LoginModule.SplashScreenViewActivity"
+            android:theme="@style/Theme.NoPreviewWindow">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginModule.RegisterViewActivity" />
+        <activity android:name=".LoginModule.LoginViewActivity" />
+        <activity android:name=".LoginModule.ForgotViewActivity" />
+        <activity android:name=".LoginModule.RegisterVerificationActivity" />
+        <activity android:name=".LoginModule.NewPasswordViewActivity" />
+        <activity android:name=".LoginModule.ForgotPasswordVerificationActivity"/>
+        <activity
+            android:name="com.vedas.weightloss.Settings.PersonalInfoActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.vedas.weightloss.Settings.PersonalInfoNextActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.vedas.weightloss.Calender.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+
+        <activity
+            android:name="com.vedas.weightloss.Settings.ActivityLevelActivity"
+            android:theme="@style/MyThemeOne" />
+
+        <activity
+            android:name="com.vedas.weightloss.Settings.WeekGoalActivity"
+            android:theme="@style/MyThemeOne" />
+
+        <activity
+            android:name="com.vedas.weightloss.Settings.WeekGoalNextActivity"
+            android:theme="@style/MyThemeOne" />
+
+        <activity android:name="com.vedas.weightloss.DashBoardModule.DashBoardTabsActivity" />
+        <activity
+            android:name="com.vedas.weightloss.FoodModule.BreakfastActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.vedas.weightloss.FoodModule.AddBreakfastActivity"
+            android:theme="@style/MyThemeOne"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.vedas.weightloss.FoodModule.AddWeightActivity"
+            android:theme="@style/MyThemeOne" />
+
+        <activity android:name="com.vedas.weightloss.FoodModule.DayOneActivity" />
+        <activity
+            android:name="com.vedas.weightloss.FoodModule.AddWatterActivity"
+            android:theme="@style/MyThemeOne" />
+
+        <activity
+            android:name="com.vedas.weightloss.FoodModule.ExerciseActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.vedas.weightloss.FoodModule.AddExerciseActivity"
+            android:theme="@style/MyThemeOne"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.vedas.weightloss.MoreModule.CaptureActivityPortrait"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".MoreModule.DeleteAccountActivity" />
+        <activity android:name=".MoreModule.ShareandEarnActivity" />
+        <activity android:name=".MoreModule.ScrachCardActivity" />
+        <activity android:name=".MoreModule.UnitsActivity" />
+        <activity android:name=".MoreModule.RemindersActivity" />
+        <activity android:name=".MoreModule.EditRemainderActivity" />
+        <activity android:name=".MoreModule.GoalsActivity" />
+        <activity android:name=".MoreModule.AboutUsActivity"/>
+        <activity android:name=".MoreModule.FeedbackActivity"/>
+        <activity android:name=".MoreModule.ProfilePageActivity"/>
+        <activity android:name=".MoreModule.RegionActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".MoreModule.GoogleFitActivity"/>
+
+        <receiver
+            android:name=".NetWork.ConnectionReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Register the Alarm Receiver -->
+        <receiver
+            android:name=".MoreModule.AlarmReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="my.action.string" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

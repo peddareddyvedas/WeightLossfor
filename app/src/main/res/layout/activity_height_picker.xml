@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="230dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rl_title"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Height"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/rl_title"
+                android:layout_marginTop="25dp"
+                android:id="@+id/rl_feetinch"
+                android:visibility="gone"
+                android:layout_height="30dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rl_one"
+                    android:layout_height="30dp">
+                    <Spinner
+                        android:id="@+id/feetspinner"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="20dp"
+
+                        />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#cccccc"
+                        android:text="Weight"
+                        android:id="@+id/view"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/feet"
+                        android:layout_toRightOf="@id/view"
+                        android:layout_marginTop="10dp"
+                        android:text="ft"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/rl_one"
+                    android:layout_height="30dp">
+                    <Spinner
+                        android:id="@+id/inchspinner"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="20dp"
+
+                        />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="1dp"
+                        android:id="@+id/view2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#cccccc"
+                        android:text="Weight"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/view2"
+                        android:layout_marginTop="10dp"
+                        android:text="in"
+                        android:id="@+id/inch"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="60dp"
+                android:id="@+id/rl_cm"
+                android:layout_height="30dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rl_two"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="30dp">
+                    <Spinner
+                        android:id="@+id/spinnercm"
+                        android:layout_width="60dp"
+                        android:background="@android:color/transparent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="15dp"
+                        />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#cccccc"
+                        android:text="Weight"
+                        android:id="@+id/viewcm"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/viewcm"
+                        android:layout_marginTop="10dp"
+                        android:text="cm"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+                </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="120dp"
+                android:id="@+id/measure"
+                android:layout_height="40dp">
+                <View
+                    android:layout_width="190dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#cccccc"
+                    android:text="Weight"
+                    android:id="@+id/view1"
+                    android:textSize="18dp" />
+                <Spinner
+                    android:id="@+id/spinnerHeight"
+                    android:layout_width="190dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_spinner"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:text="Kg"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Set"
+                    android:textSize="16dp"
+                    android:id="@+id/set"
+                    android:textStyle="bold"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorRed"
+                    android:layout_height="wrap_content" />
+                </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:id="@+id/context_view"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/lrToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/colorRed">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/back"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="1dp"
+                        android:background="@drawable/ic_back" />
+
+                    <com.vedas.weightloss.FONTS.TextViewFontStyle
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical|start"
+                        android:layout_marginLeft="40dp"
+                        android:text="ddcdcdcdc"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <com.andexert.library.RippleView
+                        android:id="@+id/more"
+                        android:layout_width="?android:actionBarSize"
+                        android:layout_height="?android:actionBarSize"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="70dp"
+                        app:rv_color="@color/colorWhite"
+                        app:rv_rippleDuration="@integer/anim_duration_medium"
+                        app:rv_zoom="true"
+                        app:rv_zoomDuration="10">
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:id="@+id/centerImage"
+                            android:layout_width="?android:actionBarSize"
+                            android:layout_height="?android:actionBarSize"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:text="Next"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff"
+                            android:textSize="16dp" />
+                    </com.andexert.library.RippleView>
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lrToolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="wrap_content">
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                           android:layout_width="match_parent"
+                           android:text="Goal Weight"
+                           android:textSize="18dp"
+                           android:textColor="@color/colorBlack"
+                           android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_one"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp">
+
+                            <EditText
+                                android:id="@+id/goal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:cursorVisible="true"
+                                android:hint="0 kg"
+                                android:visibility="gone"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:textColor="#000000"
+                                android:textColorHint="#ffffff"
+                                android:textSize="16dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="30dp">
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="What is your weekly goal ?"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp">
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Don't worry. You can change this latter."
+                            android:textSize="15dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recylerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layoutAnimation="@anim/layout_animation_fall_down">
+
+                        </android.support.v7.widget.RecyclerView>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp">
+
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="What are your workout days ?"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recylerview1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layoutAnimation="@anim/layout_animation_fall_down">
+
+                        </android.support.v7.widget.RecyclerView>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

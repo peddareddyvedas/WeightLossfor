@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f6f6"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <include layout="@layout/activity_hometoolbar" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp">
+
+        <ImageView
+            android:id="@+id/imagecash"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_cash" />
+
+        <com.vedas.weightloss.FONTS.TextViewFontStyle
+            android:id="@+id/mycash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagecash"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="My Cash"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <com.vedas.weightloss.FONTS.BoldTextViewFontStyle
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mycash"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="50.00"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <com.vedas.weightloss.FONTS.ButtonFontStyle
+            android:id="@+id/starttrack"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_border"
+            android:text="Share"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp" />
+
+        <com.vedas.weightloss.FONTS.TextViewFontStyle
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/starttrack"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="5dp"
+            android:text="Total Cash"
+            android:textColor="#cfcfcf" />
+
+        <TextView
+            android:id="@+id/totaledit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/starttrack"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/total"
+            android:text="178.00Rs/-"
+            android:textColor="#cfcfcf" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relat"
+        android:layout_marginTop="20dp">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF">
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="QR Code"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/qrcode"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/ic_qr" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardView"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF">
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Invitation Code"
+
+                    android:textColor="#000000" />
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:id="@+id/qrtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="WCRET123W"
+                    android:textColor="#FFFF4444" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+</RelativeLayout>

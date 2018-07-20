@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.vedas.weightloss.LoginModule.LoginViewActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/ic_background"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                android:id="@+id/weightloss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="110dp"
+                android:text="Weight"
+                android:textColor="@color/colorRed"
+                android:textSize="30dp" />
+            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                android:id="@+id/weightloss1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="87dp"
+                android:layout_marginLeft="5dp"
+                android:text="Loss"
+                android:layout_toRightOf="@+id/weightloss"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/ic_logo"/>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="170dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/rl_name"
+                        android:layout_marginTop="5dp">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/TextInputLayoutname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edittextname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:hint="Name"
+                                android:drawableLeft="@drawable/ic_user"
+                                android:drawablePadding="20dp"
+                                android:paddingTop="4dp"
+                                android:inputType="textEmailAddress"
+                                android:textColor="#ffffff"
+                                android:textColorHint="#ffffff"
+                                android:layout_below="@+id/TextInputLayout1"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/rl_one"
+                        android:layout_below="@+id/rl_name"
+                        android:layout_marginTop="15dp">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/TextInputLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edittext1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+
+                                android:hint="Email"
+                                android:drawableLeft="@drawable/ic_email"
+                                android:drawablePadding="20dp"
+                                android:paddingTop="4dp"
+                                android:inputType="textEmailAddress"
+                                android:textColor="#ffffff"
+                                android:textColorHint="#ffffff"
+                                android:layout_below="@+id/TextInputLayout1"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/rl_two"
+                        android:layout_below="@+id/rl_one"
+                        android:layout_marginTop="15dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Password"
+                                android:drawableLeft="@drawable/ic_lock"
+                                android:drawablePadding="20dp"
+                                android:paddingTop="4dp"
+                                android:textSize="16dp"
+                                android:id="@+id/edittext2"
+                                android:inputType="textPassword"
+                                android:textColor="#ffffff"
+                                android:textColorHint="#ffffff"
+                                android:layout_below="@+id/TextInputLayout1"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+                        <CheckBox
+                            android:id="@+id/chk"
+                            android:button="@drawable/checkbox"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="30dp"
+                            android:scaleX="0.70"
+                            android:scaleY="0.70"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="20dp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/rl_three"
+                        android:layout_below="@+id/rl_two"
+                        android:layout_marginTop="15dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Confirm Password"
+                                android:id="@+id/edittext3"
+                                android:drawableLeft="@drawable/ic_lock"
+                                android:drawablePadding="20dp"
+                                android:paddingTop="4dp"
+                                android:textSize="16dp"
+                                android:inputType="textPassword"
+                                android:textColor="#ffffff"
+                                android:textColorHint="#ffffff"
+                                android:layout_below="@+id/TextInputLayout1"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+                        <CheckBox
+                            android:id="@+id/chk1"
+                            android:button="@drawable/checkbox"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="30dp"
+                            android:scaleX="0.70"
+                            android:scaleY="0.70"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="20dp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_three"
+                        android:id="@+id/rl_four"
+                        android:layout_marginTop="50dp">
+                        <com.vedas.weightloss.FONTS.ButtonFontStyle
+                            android:layout_width="260dp"
+                            android:background="@drawable/button_border"
+                            android:text="Sign Up"
+                            android:textAllCaps="false"
+                            android:textSize="16dp"
+                            android:id="@+id/button"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/colorWhite"
+                            android:layout_height="45dp" />
+
+                       <!-- <com.dd.CircularProgressButton
+                            android:id="@+id/circularButton1"
+                            android:layout_width="260dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/cpb_white"
+                            android:textSize="18sp"
+                            app:cpb_colorIndicator="@color/cpb_red"
+                            app:cpb_cornerRadius="48dp"
+                            app:cpb_selectorComplete="@color/cpb_red"
+                            app:cpb_selectorError="@color/cpb_red"
+                            app:cpb_selectorIdle="@color/cpb_red"
+                            app:cpb_textComplete="Success"
+                            app:cpb_textError="Error"
+                            android:textAllCaps="false"
+                            app:cpb_textIdle="Sign Up" />
+                        &lt;!&ndash;app:cpb_iconComplete="@drawable/ic_cancel"
+                        app:cpb_iconError="@drawable/ic_cancel"&ndash;&gt;
+                  -->  </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/rl_four"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+                        <com.vedas.weightloss.FONTS.TextViewFontStyle
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/colorWhite"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/account"
+                            android:textSize="15dp"
+                            android:text="Already have an account? Sign In."
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

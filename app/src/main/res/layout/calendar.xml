@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/main"
+        android:background="@color/colorRed">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:id="@+id/year"
+            android:text="2018"
+            android:textSize="16dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/txt_date"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:textSize="20dp"
+            android:text="Currentmonth"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/calendar_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/main"
+        android:background="@color/colorWhite">
+
+        <Button
+            android:id="@+id/previous_month"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_email" />
+
+        <Button
+            android:id="@+id/next_month"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_email" />
+
+        <TextView
+            android:id="@+id/current_month"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Currentmonth"
+            android:textColor="#000000" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/calendar_header"
+        android:layout_height="match_parent">
+        <GridView
+            android:id="@+id/calendar_days_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:numColumns="7"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:stretchMode="columnWidth"/>
+
+        <ViewSwitcher
+            android:id="@+id/calendar_switcher"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calendar_days_grid"
+            >
+
+            <GridView
+                android:id="@+id/calendar_grid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="1dp"
+                android:numColumns="7"
+                android:fadingEdge="none"
+                android:stretchMode="columnWidth"
+                android:cacheColorHint="@android:color/transparent"
+                android:scrollingCache="false"
+                android:verticalSpacing="1dp" />
+        </ViewSwitcher>
+
+    </RelativeLayout>
+
+</RelativeLayout>

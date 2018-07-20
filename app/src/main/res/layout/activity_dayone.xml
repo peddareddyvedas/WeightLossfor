@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/activity_hometoolbar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#F3EFEF">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="13dp"
+            android:id="@+id/main"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:text="1,840"
+                android:id="@+id/targetCal"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content" />
+            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:text="-"
+                android:id="@+id/txt2"
+                android:layout_toRightOf="@+id/targetCal"
+                android:layout_marginLeft="35dp"
+                android:layout_height="wrap_content" />
+            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:text="0"
+                android:id="@+id/foodCal"
+                android:layout_toRightOf="@+id/txt2"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content" />
+            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:text="+"
+                android:id="@+id/txt4"
+                android:layout_toRightOf="@+id/foodCal"
+                android:layout_marginLeft="40dp"
+                android:layout_height="wrap_content" />
+            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:text="0"
+                android:id="@+id/exerciseCal"
+                android:layout_toRightOf="@+id/txt4"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content" />
+            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:text="="
+                android:id="@+id/txt6"
+                android:layout_toRightOf="@+id/exerciseCal"
+                android:layout_marginLeft="40dp"
+                android:layout_height="wrap_content" />
+            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:text="1,840"
+                android:id="@+id/remaileCal"
+                android:layout_toRightOf="@+id/txt6"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colornormal"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/main"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:text="Goal"
+                android:id="@+id/tx1"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content" />
+
+            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:text="Food"
+                android:id="@+id/tx2"
+                android:layout_toRightOf="@+id/tx1"
+                android:layout_marginLeft="60dp"
+                android:layout_height="wrap_content" />
+
+            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:text="Exercise"
+                android:id="@+id/tx3"
+                android:layout_toRightOf="@+id/tx2"
+                android:layout_marginLeft="60dp"
+                android:layout_height="wrap_content" />
+            <com.vedas.weightloss.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:text="Remaining"
+                android:id="@+id/tx4"
+                android:layout_toRightOf="@+id/tx3"
+                android:layout_marginLeft="30dp"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/weighttitle"
+        android:background="#EFECEC"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:layout_height="40dp">
+
+        <com.vedas.weightloss.FONTS.TextViewFontStyle
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="Weight"
+            android:textSize="16sp" />
+
+        <com.vedas.weightloss.FONTS.TextViewFontStyle
+            android:id="@+id/weight1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="0 kg"
+            android:textColor="@color/colorBlack"
+            android:layout_marginRight="20dp"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#F3EFEF"
+        android:id="@+id/addweighttille"
+        android:layout_marginTop="5dp"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/imageadd"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="dmcdkcd"
+            android:background="@drawable/ic_add"
+            android:textSize="16sp"
+            tools:ignore="UnusedAttribute" />
+
+        <com.vedas.weightloss.FONTS.TextViewFontStyle
+            android:id="@+id/addweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="Add Weight"
+            android:textSize="15sp"
+            tools:ignore="UnusedAttribute" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/Relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerviewbeakfast"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:layoutAnimation="@anim/layout_animation_fall_down" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

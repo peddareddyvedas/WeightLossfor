@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <com.vedas.weightloss.FONTS.TextViewFontStyle
+            android:id="@+id/title"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="zbNzbNzbNZ"
+            android:textSize="16sp" />
+
+        <com.vedas.weightloss.FONTS.TextViewFontStyle
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="znzZ"
+            android:textSize="13sp" />
+
+        <com.vedas.weightloss.FONTS.TextViewFontStyle
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="znzzZb"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#cccccc"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/exercriselayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainView"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_exercise" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/text_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Connect a step Tracker"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_one"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Automatically tracksteps and calories burned"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

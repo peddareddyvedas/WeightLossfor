@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeactivity"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="#cfcfcf">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/ic_left" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Today"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/ic_right" />
+
+
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piechart"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dailycalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Daily Calories Budget"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/editdailycalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+
+            android:text="973"
+            android:textColor="#000000"
+
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/foodcalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dailycalories"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Food Calories Consumed"
+            android:textColor="#cfcfcf"
+
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/editfoodcalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dailycalories"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="867"
+            android:textColor="#cfcfcf"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/exercrisecalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foodcalories"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Exercrise Calories Burn"
+            android:textColor="#cfcfcf"
+
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/editexercrisecalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/foodcalories"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="765"
+            android:textColor="#cfcfcf"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/netcalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exercrisecalories"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Net Calories so for today"
+            android:textColor="#000000"
+
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/editnetcalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/exercrisecalories"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="674"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

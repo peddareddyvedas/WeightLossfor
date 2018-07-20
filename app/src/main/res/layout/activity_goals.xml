@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <include layout="@layout/activity_hometoolbar" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF">
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Starting Weight"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:id="@+id/startingkg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="75kg on may 21"
+                    android:textColor="#FFFF4444"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cardView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF">
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Current Weight"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+
+                    android:id="@+id/currentweight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="75kg"
+                    android:textColor="#FFFF4444"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF">
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Goal Weight"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:id="@+id/goalweight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="60kg"
+                    android:textColor="#FFFF4444"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#FFFFFF">
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Weekly Goal"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:id="@+id/weeklygoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:text="ddnddcccccccccccc"
+                    android:textColor="#FFFF4444"
+                    android:textSize="15sp" />
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:id="@+id/weeklygoal1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/weeklygoal"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="7dp"
+                    android:text="0.5 kg for week is Recommended"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cardView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF">
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Activity Level"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:id="@+id/activitylevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="Active"
+                    android:textColor="#FFFF4444"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cardView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            app:cardElevation="2dp"
+            app:cardMaxElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF">
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="Calories Per Day"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <com.vedas.weightloss.FONTS.TextViewFontStyle
+                    android:id="@+id/caloriesperday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:text="1840"
+                    android:textColor="#FFFF4444"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="50dp">
+
+            <com.vedas.weightloss.FONTS.ButtonFontStyle
+                android:id="@+id/set"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/layout_buttoncorner"
+                android:text="Update Goal"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
